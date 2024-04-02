@@ -23,20 +23,26 @@
       </header>
 
       <main>
-        <form action="">
+        <form id="form">
           <fieldset id="field-personal-info">
             <div class="fieldset-wrapper">
               <legend>Informações Pessoais</legend>
               <div class="col-2">
                 <div class="input-wrapper">
                   <label for="mentor-personal-info-name">Nome</label>
-                  <input type="text" id="mentor-personal-info-name" required />
+                  <input
+                    type="text"
+                    id="mentor-personal-info-name"
+                    placeholder="Ex: João"
+                    required
+                  />
                 </div>
                 <div class="input-wrapper">
                   <label for="mentor-personal-info-surname">Sobrenome</label>
                   <input
                     type="text"
                     id="mentor-personal-info-surname"
+                    placeholder="Ex: Silva"
                     required
                   />
                 </div>
@@ -45,7 +51,12 @@
                 <label for="mentor-personal-info-email"
                   >Email <span>(Digite um email válido)</span></label
                 >
-                <input type="email" id="mentor-personal-info-email" required />
+                <input
+                  type="email"
+                  id="mentor-personal-info-email"
+                  placeholder="Ex: joao.silva@gmail.com"
+                  required
+                />
               </div>
               <div class="input-wrapper">
                 <label for="mentor-personal-info-password"
@@ -68,7 +79,12 @@
                 <label for="mentor-mentor-info-name"
                   >Nome do seu mentor <span>(só o primeiro nome)</span></label
                 >
-                <input type="text" id="mentor-mentor-info-name" required />
+                <input
+                  type="text"
+                  id="mentor-mentor-info-name"
+                  placeholder="Ex: Diego"
+                  required
+                />
               </div>
             </div>
           </fieldset>
@@ -139,7 +155,9 @@
         </form>
       </main>
 
-      <footer></footer>
+      <footer>
+        <input class="btn" form="form" type="submit" value="Salvar" />
+      </footer>
     </div>
   </body>
 </html>

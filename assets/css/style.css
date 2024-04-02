@@ -14,6 +14,7 @@
   --betterAccess: #6c6a71;
   --inputLabel: #4e4958;
   --spanColor: #c1bccc;
+  --btnSection: #535971;
 }
 
 body {
@@ -166,4 +167,29 @@ fieldset legend,
   font-size: 20px;
 }
 
-/* TODO: Button Submit */
+footer {
+  background: var(--btnSection);
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+  border-radius: 0 0 18px 18px;
+  padding: 52px 71px;
+}
+
+footer .btn {
+  height: 55px;
+  width: 608px;
+  background: var(--buttonColor);
+  font-family: "Staatliches", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: var(--white);
+  border: none;
+  border-radius: 20px;
+}
+
+footer .btn:hover {
+  background: #d8173d;
+}
